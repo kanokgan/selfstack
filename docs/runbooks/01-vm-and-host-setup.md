@@ -185,6 +185,5 @@ After the host reboots, reconnect via SSH (`ssh kanokgan@192.168.0.204`) and ver
 * **Cannot connect via SSH:** Ensure VM network setting in UTM is set to **Bridged Network** and check `ip addr` in the UTM console window.
 * **Swap re-enabled:** Re-run `sudo swapoff -a` and inspect `/etc/fstab` to ensure swap line is commented out.
 * **Kernel modules missing:** Run `sudo modprobe overlay` and `sudo modprobe br_netfilter` manually.
-```
 
 ---
